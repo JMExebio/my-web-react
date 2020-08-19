@@ -49,15 +49,12 @@ const RazonesStyled = styled.div`
 `;
 function Razones() {
   const [slider, setSlider] = useState(0);
-  const [autoPlay, setAutoPlay] = useState(false);
+  const [autoPlay] = useState(false);
   const next = () => {
     setSlider(slider + 1);
   };
   const prev = () => {
     setSlider(slider - 1);
-  };
-  const changeAutoPlay = () => {
-    setAutoPlay(!autoPlay);
   };
   const updateCurrentSlide = (index) => {
     if (slider !== index) {

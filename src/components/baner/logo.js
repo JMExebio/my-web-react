@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import LogoM from "../../static/img/logoM.svg";
 const LogoStyled = styled.div`
   display: flex;
   justify-content: center;
@@ -16,8 +17,8 @@ const LogoStyled = styled.div`
 `;
 function Logo() {
   return (
-    <LogoStyled>
-      <img src="./img/logoM.svg" alt="" />
+    <LogoStyled className="hero-logo">
+      <img src={LogoM} alt="" />
     </LogoStyled>
   );
 }

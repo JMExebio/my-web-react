@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 const ButtonSolucionStyled = styled.button`
   position: relative;
   display: flex;
@@ -13,15 +14,16 @@ const ButtonSolucionStyled = styled.button`
   letter-spacing: 0.1em;
   background: transparent;
   color: #e19c5d;
-  border: 8px solid #e19c5d;
+  border: 3px solid #e19c5d;
   box-sizing: border-box;
   border-radius: 20px;
-  margin: auto; 
+  margin: auto;
+  outline: none;
   &:hover::before {
     content: "Solución";
-    position:absolute;
-    left:0;
-    top:0;
+    position: absolute;
+    left: 0;
+    top: 0;
     padding: 9px 19px;
     font-family: Roboto;
     font-style: normal;
@@ -35,9 +37,18 @@ const ButtonSolucionStyled = styled.button`
     box-sizing: border-box;
     border-radius: 9px;
   }
+  @media screen and (min-width: 768px) {
+    border: 7px solid #e19c5d;
+  }
 `;
 function ButtonSolucion() {
-  return <ButtonSolucionStyled>Solución</ButtonSolucionStyled>;
+  const history = useHistory();
+  function handleClick() {
+    history.push("/aritmetica/solucion/0101");
+  }
+  return (
+    <ButtonSolucionStyled onClick={handleClick}>Solución</ButtonSolucionStyled>
+  );
 }
 
 export default ButtonSolucion;

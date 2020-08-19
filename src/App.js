@@ -1,12 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import styled from "styled-components";
-import AnimeSVG from "./components/pruebas/animeSVG";
 import Home from "./views/home";
-import ThemesView from "./views/themes-view"
-import Razones from "./components/slider-presentacion/razones";
-import SliderFondo from "./components/slider-presentacion/slider-fondo";
+import ThemesView from "./views/themes-view";
 import Solution from "./components/solution-problem/solution";
+import Razones from "./components/slider-presentacion/razones";
 
 const AppStyled = styled.div`
   overflow-x: hidden;
@@ -48,11 +46,14 @@ function App() {
   return (
     <Router>
       <AppStyled>
-        <Route path="/prueba">
-          <Solution />
-        </Route>
-        <Route path="/aritmetica">
+        <Route path="/aritmetica" exact>
           <ThemesView />
+        </Route>
+        <Route path="/aritmetica/razones" exact>
+          <Razones />
+        </Route>
+        <Route path="/aritmetica/solucion/0101" exact>
+          <Solution />
         </Route>
         <Route path="/" exact>
           <Home />

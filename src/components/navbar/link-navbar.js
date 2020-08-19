@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 const LinkNavbarStyled = styled.li`
   display: flex;
   align-items: center;
   a {
     position: relative;
     padding: 0.5em 0;
-    margin: 0 0.5em;
+    margin: 0 1em;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 24px;
     letter-spacing: 0.1em;
     color: #4e2cbe;
     ::after {
@@ -37,10 +37,10 @@ const LinkNavbarStyled = styled.li`
     }
   }
 `;
-function LinkNavbar({ children }) {
+function LinkNavbar({ children, href }) {
   return (
     <LinkNavbarStyled>
-      <NavLink to="/">{children}</NavLink>
+      <Link to={{ pathname: "/", hash: href }}>{children}</Link>
     </LinkNavbarStyled>
   );
 }

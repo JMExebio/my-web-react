@@ -1,17 +1,17 @@
 import { useEffect } from "react";
-import { withRouter } from "react-router-dom";
+import { withRouter, useLocation } from "react-router-dom";
 
-const ScrollHandler = ({ location }) => {
+const ScrollHandler = () => {
+  const location = useLocation();
   useEffect(() => {
     const element = document.getElementById(location.hash);
-    console.log(location.hash);
     setTimeout(() => {
       window.scrollTo({
         behavior: element ? "smooth" : "auto",
-        top: element ? element.offsetTop : 0,
+        top: element ? element.offsetTop - 100 : 0,
       });
-    }, 100);
-  }, [location]);
+    }, 200);
+  }, [location.hash]);
 
   return null;
 };

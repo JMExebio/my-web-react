@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import FooterCourse from "./footer-course";
 import Wrapper from "../wrapper";

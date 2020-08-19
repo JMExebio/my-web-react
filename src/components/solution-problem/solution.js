@@ -32,10 +32,10 @@ const SolutionStyled = styled.div`
     &-enun {
       margin-bottom: 3%;
     }
-    &-claves{
-        .flecha{
-            opacity:0;
-        }
+    &-claves {
+      .flecha {
+        opacity: 0;
+      }
     }
   }
   .btn-manejo {
@@ -56,15 +56,15 @@ const SolutionStyled = styled.div`
 `;
 function Solution() {
   var basicTimeline = anime.timeline();
-  function play() {
-    basicTimeline.play();
-  }
-  function pause() {
-    basicTimeline.pause();
-  }
-  function restart() {
-    basicTimeline.restart();
-  }
+    function play() {
+      basicTimeline.play();
+    }
+    function pause() {
+      basicTimeline.pause();
+    }
+    function restart() {
+      basicTimeline.restart();
+    }
   useEffect(() => {
     basicTimeline
       .add({
@@ -101,12 +101,12 @@ function Solution() {
       })
       .add({
         targets: ".problem .problem-claves .flecha",
-        opacity:1,
+        opacity: 1,
         duration: 500,
         easing: "easeInOutSine",
         delay: 200,
       });
-  }, []);
+  }, [basicTimeline]);
   return (
     <SolutionStyled>
       <Problema className="title-prob" />

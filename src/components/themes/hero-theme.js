@@ -18,6 +18,7 @@ const HeroThemesStyled = styled.section`
       grid-row-gap: 2em;
       margin: auto;
       .img {
+        width: 100%;
         margin: auto;
       }
     }

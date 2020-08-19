@@ -76,19 +76,19 @@ function FooterCourse() {
       <div className="footer-course">
         <ul className="footer-items">
           <li className="footer-item">
-            <Link to="/">Aritmética</Link>
+            <Link to={{ pathname: "/", hash: "#1" }}>Aritmética</Link>
           </li>
           <li className="footer-item">
-            <Link to="/">Álgebra</Link>
+            <Link to={{ pathname: "/", hash: "#2" }}>Álgebra</Link>
           </li>
           <li className="footer-item">
-            <Link to="/">R.Matemático</Link>
+            <Link to={{ pathname: "/", hash: "#3" }}>R.Matemático</Link>
           </li>
           <li className="footer-item">
-            <Link to="/">Física</Link>
+            <Link to={{ pathname: "/", hash: "#4" }}>Física</Link>
           </li>
           <li className="footer-item">
-            <Link to="/">Química</Link>
+            <Link to={{ pathname: "/", hash: "#5" }}>Química</Link>
           </li>
         </ul>
       </div>

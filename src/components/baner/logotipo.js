@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import LogotipoM from "../../static/img/logotipoM.svg";
 const LogotipoStyled = styled.div`
   display: flex;
   justify-content: center;
@@ -9,15 +10,15 @@ const LogotipoStyled = styled.div`
   }
   @media screen and (min-width: 768px) {
     img {
-      width: 500px;
+      width: 450px;
       height: 150px;
     }
   }
 `;
 function Logotipo() {
   return (
-    <LogotipoStyled>
-      <img src="./img/logotipoM.svg" alt="" />
+    <LogotipoStyled className="hero-logotipo">
+      <img src={LogotipoM} alt="" /> 
     </LogotipoStyled>
   );
 }
