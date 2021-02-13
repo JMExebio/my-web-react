@@ -5,6 +5,7 @@ import ExWrapper from "../ex-wrapper";
 import ExLogo from "./ex-logo";
 import ExLogotipo from "./ex-logotipo";
 import ExDescription from "./ex-description";
+import { Helmet } from "react-helmet";
 
 const HeroStyled = styled.section`
   background: linear-gradient(
@@ -80,6 +81,9 @@ function ExHero() {
   }, []);
   return (
     <HeroStyled>
+      <Helmet>
+        <title>Exebio-Cursos-Temas</title>
+      </Helmet>
       <ExWrapper>
         <div className="hero-content">
           <ExLogo />

@@ -19,6 +19,13 @@ const FooterStyled = styled.div`
         display: block;
         margin: auto;
       }
+      .informacion {
+        color: white;
+        text-align: center;
+        span{
+          color: #2CF30B;
+        }
+      }
       .logo {
         display: block;
         margin: auto;
@@ -38,11 +45,23 @@ const FooterStyled = styled.div`
       font-size: 24px;
     }
   }
+  @media screen and (min-width: 768px) {
+    .footer {
+      &-content {
+        .informacion {
+          font-size: 1em;
+        }
+      }
+    }
+  }
   @media screen and (min-width: 1080px) {
     .footer {
       &-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        .informacion {
+          font-size: 1.2em;
+        }
         .logo {
           margin-bottom: 1.5em;
         }
@@ -64,6 +83,13 @@ function ExFooter() {
                 alt=""
               />
             </Link>
+            <div className="informacion">
+              <p>
+                Hola te asesoro en temas de Matemática,Física y
+                Química. Te ayudo en tus tareas, trabajos universitarios, te preparo para tu examen, etc.
+                Vamos animate has click al icono de <span>WhatsApp</span> y aprendamos juntos.
+              </p>
+            </div>
             <ExLinkRedSocial />
           </div>
           <ExFooterCourse />

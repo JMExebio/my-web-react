@@ -75,7 +75,7 @@ function ExThemesForm({ currentId, setCurrentId }) {
         console.log(error.message);
       },
       () => {
-        storageRef.getDownloadURL().then(function (url) {
+        task.snapshot.ref.getDownloadURL().then(function (url) {
           setValues({ ...values, [name]: url });
         });
       }

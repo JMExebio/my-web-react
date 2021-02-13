@@ -4,6 +4,7 @@ import ExWrapper from "../ex-wrapper";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import getThemes from "../../redux/actions/themes-action";
+import { Helmet } from "react-helmet";
 const HeroThemesStyled = styled.section`
   margin: 0;
   padding: 0;
@@ -45,6 +46,10 @@ function ExHeroTheme() {
         {themes.Themes.filter((theme) => theme.id === params.id).map(
           (img, index) => (
             <div className="hero-grid" key={index}>
+              <Helmet>
+                <title>Exebio-{img.title}</title>
+              </Helmet>
+              
               <img src={img.imgCardURL} alt="" />
             </div>
           )

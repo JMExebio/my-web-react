@@ -46,6 +46,7 @@ function ExTeoriaTheme() {
   const dispatch = useDispatch();
   const stableDispatch = useCallback(dispatch, []);
   const theory = useSelector((state) => state.Theory);
+
   const {id, color} = useParams();
   useEffect(() => {
     stableDispatch(getTheory());

@@ -22,7 +22,7 @@ const ExWhatsapp = () => {
   
   return (
     <WhatsappStyled>
-      <a rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=51928771113&text=Hola!&nbsp;me&nbsp;puedes&nbsp;ayudar" target="_blank">
+      <a rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=51928351781&text=Hola!&nbsp;me&nbsp;puedes&nbsp;ayudar" target="_blank">
         <img src={Whatsapp} alt="whatsapp" />{" "}
       </a>
         

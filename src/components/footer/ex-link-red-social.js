@@ -38,8 +38,7 @@ const YoutubeStyled = styled(Youtube)`
 `;
 const LinkRedSocialStyled = styled.div`
   display: block;
-  padding: 1em;
-  padding: 10px 20px;
+  padding: 10px 7px;
   color: #fff;
   font-family: Roboto;
   font-style: normal;
@@ -48,28 +47,37 @@ const LinkRedSocialStyled = styled.div`
   line-height: 35px;
   align-items: center;
   letter-spacing: 0.1em;
+  justify-content:center;
   .social {
-    padding: 10px 0;
+    width: 85vw;
+    padding: 7px 0px 7px 15px;
     background: #a60cc2;
     border-radius: 20px;
     margin-top: 10px;
-    padding-left: 10px;
   }
   a {
-    margin: 0 0.5em;
+    margin: 0 0.2em;
     color: #fff;
-    font-size: 36px;
+    font-size: 32px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 500px) {
     display:flex;
     .social{
+      width: 40vw;
       margin:0 10px;
     }
   }
-  @media screen and (min-width: 1080px) {
-    display:block;
+  @media screen and (min-width: 768px) {
     .social{
-      margin:15px 0px;
+      width: 30vw;
+    }
+  }
+  @media screen and (min-width: 1080px) {
+    display:inline-flex;
+    .social{
+      width: 18vw;
+      margin:10px 0.5em;
+      padding: 0.2em 0.2em;
     }
   }
 `;

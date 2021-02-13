@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+
 const LoaderStyled = styled.div`
   display: flex;
   justify-content: center;
@@ -49,7 +50,8 @@ const ExLoader = () => {
   return (
     <LoaderStyled>
       <div className="loader">
-        <SpanStyled num={"1"}></SpanStyled>
+        <SpanStyled num={"1"}>
+        </SpanStyled>
         <SpanStyled num={"2"}></SpanStyled>
         <SpanStyled num={"3"}></SpanStyled>
         <SpanStyled num={"4"}></SpanStyled>

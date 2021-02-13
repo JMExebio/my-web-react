@@ -10,6 +10,7 @@ import getThemes from "../redux/actions/themes-action";
 import ExLoader from "../components/ex-loader";
 import ExWhatsapp from "../components/whatsapp/ex-whatsapp";
 
+
 function ExHome() {
   const dispatch = useDispatch();
   const courses = useSelector((state) => state.Courses);
@@ -21,16 +22,17 @@ function ExHome() {
   }, [stableDispatch]);
 
   return (
-    <>
-      {courses.loading && themes.loading && <ExLoader />}
-      {courses.Courses.length>=1 && <><ExScrollHandle />
-      <ExWhatsapp />
-      <ExHeader />
-      <ExHero />
-      <ExCourse />
-      <ExFooter />
-      </>
-      } 
+    <>{courses.loading && themes.loading && <ExLoader />}
+      {courses.Courses.length >= 1 && (
+        <>
+          <ExScrollHandle />
+          <ExWhatsapp />
+          <ExHeader />
+          <ExHero />
+          <ExCourse />
+          <ExFooter />
+        </>
+      )}
     </>
   );
 }
