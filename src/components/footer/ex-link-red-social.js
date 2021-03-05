@@ -37,47 +37,63 @@ const YoutubeStyled = styled(Youtube)`
   }
 `;
 const LinkRedSocialStyled = styled.div`
-  display: block;
-  padding: 10px 7px;
-  color: #fff;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 35px;
+  display: flex;
+  flex-direction:column;
+  padding: 2px 7px;
+  justify-content: center;
   align-items: center;
-  letter-spacing: 0.1em;
-  justify-content:center;
+
   .social {
+    display: flex;
     width: 85vw;
     padding: 7px 0px 7px 15px;
     background: #a60cc2;
     border-radius: 20px;
     margin-top: 10px;
+    &-title{
+      color: #fff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    margin: 0 1em;
+    }
   }
   a {
-    margin: 0 0.2em;
+    margin: 0 0.3em;
     color: #fff;
     font-size: 32px;
   }
   @media screen and (min-width: 500px) {
-    display:flex;
-    .social{
+    display: flex;
+    flex-direction:row;
+    .social {
       width: 40vw;
-      margin:0 10px;
+      margin: 0 10px;
+      &-title{
+        margin: 0 0.5em;
+      }
     }
   }
   @media screen and (min-width: 768px) {
-    .social{
-      width: 30vw;
+    .social {
+      width: 40vw;
+      &-title{
+        margin: 0 1.2em;
+      }
     }
   }
   @media screen and (min-width: 1080px) {
-    display:inline-flex;
-    .social{
-      width: 18vw;
-      margin:10px 0.5em;
+    display: inline-flex;
+    .social {
+      width: 20vw;
+      margin: 10px 0.5em;
       padding: 0.2em 0.2em;
+      &-title{
+        margin: 0 0.5em;
+      }
     }
   }
 `;
@@ -85,7 +101,7 @@ function ExLinkRedSocial() {
   return (
     <LinkRedSocialStyled>
       <div className="social">
-        Comparte:
+        <h3 className="social-title">Comparte:</h3>
         <a
           rel="noopener noreferrer"
           href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjesusexebio.com"
@@ -102,7 +118,7 @@ function ExLinkRedSocial() {
         </a>
       </div>
       <div className="social">
-        Sigueme:
+        <h3 className="social-title">Sigueme:</h3>
         <a
           rel="noopener noreferrer"
           href="https://www.instagram.com/?hl=es-la/@jmexebioc"

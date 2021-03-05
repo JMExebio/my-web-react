@@ -9,7 +9,6 @@ const CourseStyled = styled.section`
   position: relative;
   width: 100%;
   background: linear-gradient(90deg, #140f34 0%, #30193f 100%);
-  margin: auto;
   .title-h2 {
     text-align: center;
     font-size: 28px;
@@ -23,7 +22,7 @@ const CourseStyled = styled.section`
     &-grid {
       display: grid;
       width: 100%;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
       grid-row-gap: 1em;
       align-items: center;
       padding-bottom: 1em;
@@ -34,20 +33,10 @@ const CourseStyled = styled.section`
     .title-h2 {
       font-size: 36px;
     }
-    .course {
-      &-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
   }
   @media screen and (min-width: 1024px) {
     .title-h2 {
       font-size: 48px;
-    }
-    .course {
-      &-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
     }
   }
 `;

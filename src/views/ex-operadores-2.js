@@ -1,48 +1,48 @@
 import React from "react";
 import ExSlider from "../components/clases/ex-slider";
 import ExHeaderSlider from "../components/clases/ex-header-slider";
-import ExProblema25 from "../components/clases/pre/uni/operadores/ex-problema-25";
-import ExProblema26 from "../components/clases/pre/uni/operadores/ex-problema-26";
-import ExProblema27 from "../components/clases/pre/uni/operadores/ex-problema-27";
-import ExProblema28 from "../components/clases/pre/uni/operadores/ex-problema-28";
-import ExProblema29 from "../components/clases/pre/uni/operadores/ex-problema-29";
-import ExProblema30 from "../components/clases/pre/uni/operadores/ex-problema-30";
-import ExProblema31 from "../components/clases/pre/uni/operadores/ex-problema-31";
+import ExProblema025 from "../components/clases/operadores/pre/ex-problema-025";
+import ExProblema026 from "../components/clases/operadores/pre/ex-problema-026";
+import ExProblema027 from "../components/clases/operadores/pre/ex-problema-027";
+import ExProblema028 from "../components/clases/operadores/pre/ex-problema-028";
+import ExProblema029 from "../components/clases/operadores/pre/ex-problema-029";
+import ExProblema030 from "../components/clases/operadores/pre/ex-problema-030";
+import ExProblema031 from "../components/clases/operadores/pre/ex-problema-031";
 
-import ExPresentacion2 from "../components/clases/pre/uni/operadores/ex-presentacion-2";
+import ExPresentacionB from "../components/clases/operadores/pre/ex-presentacion-b";
 import { Helmet } from "react-helmet";
 
 function ExOperadores2() {
   return (
     <>
       <Helmet>
-        <title>Exebio-Operadores Binarios</title>
+        <title>Operadores Binarios</title>
       </Helmet>
       <ExHeaderSlider />
       <ExSlider>
         <div className="mySlides activo">
-          <ExPresentacion2 />
+          <ExPresentacionB />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema25 />
+          <ExProblema025 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema26 />
+          <ExProblema026 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema27 />
+          <ExProblema027 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema28 />
+          <ExProblema028 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema29 />
+          <ExProblema029 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema30 />
+          <ExProblema030 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema31 />
+          <ExProblema031 />
         </div>
       </ExSlider>
     </>

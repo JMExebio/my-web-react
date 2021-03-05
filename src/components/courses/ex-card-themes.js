@@ -3,17 +3,25 @@ import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 const CardThemesStyled = styled.article`
   width: 320px;
+  aspect-ratio: 16/20;
   position: relative;
-  display: block;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  place-items: center;
   cursor: pointer;
   .card-title {
     text-align: center;
+    padding-top:0;
+    margin-top:0;
   }
   .card-text {
-    font-size: 24px;
+    font-size: 22px;
+    letter-spacing:1px;
     font-weight: 500;
     color: ${({ color3 }) => color3};
+    padding-top:0;
+    margin-top:0;
   }
   .img-fondo {
     background: #02071a;

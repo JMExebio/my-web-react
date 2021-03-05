@@ -6,19 +6,16 @@ import ExLinkNavbar from "./ex-link-navbar";
 import ExMenuIcon from "./ex-icon-menu";
 import getCourses from "../../redux/actions/course-action";
 const MenuStyled = styled.div`
+  width: 90%;
   .menu {
-    max-width: 400px;
-    width: 100%;
+    width: 90%;
     display: ${({ toggle }) => (toggle === "default" ? "none" : "block")};
     list-style: none;
     margin: 0;
     padding: 0;
-    font-weight: 700;
     position: absolute;
     top: 100%;
-    /* left: 0; */
-    right: 0;
-    height: 100vh;
+    right:5%;
     /* border-radius: 20px; */
     li {
       &:first-of-type a {
@@ -29,19 +26,18 @@ const MenuStyled = styled.div`
       }
     }
     a {
-      background: rgba(0, 0, 0, 0.8);
-      display: block;
+      background: rgba(0, 0, 0, .8);
+      display: flex;
       text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
       flex: 1;
     }
     z-index: 3;
     &-button {
       width: 24px;
-      padding:10px
-    }
-    &-item {
-      display: flex;
-      align-items: center;
+      padding: 10px;
     }
   }
   @media screen and (min-width: 768px) {
@@ -69,7 +65,7 @@ function ExMenu() {
           </ExLinkNavbar>
         ))}
       </ul>
-      <div  className="menu-button">
+      <div className="menu-button">
         <ExMenuIcon toggle={toggle} iconStatus={iconStatus} />
       </div>
     </MenuStyled>

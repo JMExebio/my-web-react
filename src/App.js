@@ -9,15 +9,24 @@ import ExSumitCourse from "./views/ex-sumit-course";
 import ExSumitThemes from "./views/ex-sumit-themes";
 import ExSumitTheory from "./views/ex-sumit-theory";
 import ExSumitProblem from "./views/ex-sumit-problem";
-import ExDeductivoUno from "./views/ex-deductivo-1";
-import ExLogicaClasesUno from "./views/ex-logica-clases-1";
+import ExLogicaClases1 from "./views/ex-logica-clases-1";
 import ExOperadores1 from "./views/ex-operadores-1";
 import ExAnalogiasDistribuciones1 from "./views/ex-analogias-distribuciones-1";
 import ExSumitURL from "./views/ex-sumit-url";
 import ExOperadores2 from "./views/ex-operadores-2";
-import ExPlanteoEcuaciones1 from "./views/ex-planteo-ecuaciones-1";
+import ExPlanteoEcuaciones from "./views/ex-planteo-ecuaciones";
+import ExIntervaloTiempo from "./views/ex-intervalos-tiempo";
 import ExIntervaloTiempo1 from "./views/ex-intervalos-tiempo-1";
-import ExIntervaloTiempo2 from "./views/ex-intervalos-tiempo-2";
+import ExPlanteoEcuaciones1 from "./views/ex-planteo-ecuaciones-1";
+import ExPlanteoEcuaciones2 from "./views/ex-planteo-ecuaciones-2";
+import ExPlanteoEcuaciones3 from "./views/ex-planteo-ecuaciones-3";
+import ExEjemplos from "./views/ex-ejemplos";
+import ExCerteza from "./views/ex-certeza";
+import ExCerteza1 from "./views/ex-certeza-1";
+import ExEstadoGaseoso1 from "./views/ex-estado-gaseoso-1";
+import ExSistemasDispersos1 from "./views/ex-sistemas-dispersos-1";
+import ExMiselanias1 from "./views/ex-miselanias-1";
+import ExInductivo1 from "./views/ex-inductivo-1";
 const AppStyled = styled.div`
   overflow-x: hidden;
   margin: 0;
@@ -80,29 +89,56 @@ function App() {
           <Route path="/admin/url" exact>
             <ExSumitURL />
           </Route>
-          <Route path="/colegio/deductivo" exact>
-            <ExDeductivoUno />
+          <Route path="/logicaclases/1" exact>
+            <ExLogicaClases1 />
           </Route>
-          <Route path="/preuni/logicaclases" exact>
-            <ExLogicaClasesUno />
-          </Route>
-          <Route path="/preuni/operadores" exact>
+          <Route path="/operadores/1" exact>
             <ExOperadores1 />
           </Route>
-          <Route path="/preuni/operadores2" exact>
+          <Route path="/operadores/2" exact>
             <ExOperadores2 />
           </Route>
-          <Route path="/preuni/planteoecuaciones" exact>
+          <Route path="/planteoecuaciones" exact>
+            <ExPlanteoEcuaciones />
+          </Route>
+          <Route path="/planteoecuaciones/1" exact>
             <ExPlanteoEcuaciones1 />
           </Route>
-          <Route path="/colegio/analogiasdistribuciones" exact>
+          <Route path="/analogiasdistribuciones/1" exact>
             <ExAnalogiasDistribuciones1/>
           </Route>
-          <Route path="/colegio/intervalotiempo" exact>
+          <Route path="/intervalotiempo" exact>
+            <ExIntervaloTiempo />
+          </Route>
+          <Route path="/intervalotiempo/1" exact>
             <ExIntervaloTiempo1 />
           </Route>
-          <Route path="/colegio/intervalotiempo2" exact>
-            <ExIntervaloTiempo2 />
+          <Route path="/planteoecuaciones/2" exact>
+            <ExPlanteoEcuaciones2 />
+          </Route>
+          <Route path="/ejemplo" exact>
+            <ExEjemplos />
+          </Route>
+          <Route path="/certeza" exact>
+            <ExCerteza/>
+          </Route>
+          <Route path="/certeza/1" exact>
+            <ExCerteza1/>
+          </Route>
+          <Route path="/estadogaseoso/1" exact>
+            <ExEstadoGaseoso1 />
+          </Route>
+          <Route path="/sistemasdispersos/1" exact>
+            <ExSistemasDispersos1 />
+          </Route>
+          <Route path="/planteoecuaciones/3" exact>
+            <ExPlanteoEcuaciones3 />
+          </Route>
+          <Route path="/miselanias/1" exact>
+            <ExMiselanias1 />
+          </Route>
+          <Route path="/inductivo/1" exact>
+            <ExInductivo1 />
           </Route>
         </AppStyled>
       </Router>

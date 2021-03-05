@@ -82,7 +82,7 @@ function ExHero() {
   return (
     <HeroStyled>
       <Helmet>
-        <title>Exebio-Cursos-Temas</title>
+        <title>Exebio Educación</title>
       </Helmet>
       <ExWrapper>
         <div className="hero-content">

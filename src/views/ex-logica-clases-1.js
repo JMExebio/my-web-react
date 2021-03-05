@@ -1,58 +1,58 @@
 import React from "react";
 import ExSlider from "../components/clases/ex-slider";
 import ExHeaderSlider from "../components/clases/ex-header-slider";
-import ExProblema1 from "../components/clases/pre/uni/logicaclases/ex-problema-1";
-import ExProblema2 from "../components/clases/pre/uni/logicaclases/ex-problema-2";
-import ExProblema3 from "../components/clases/pre/uni/logicaclases/ex-problema-3";
-import ExProblema4 from "../components/clases/pre/uni/logicaclases/ex-problema-4";
-import ExProblema5 from "../components/clases/pre/uni/logicaclases/ex-problema-5";
-import ExProblema6 from "../components/clases/pre/uni/logicaclases/ex-problema-6";
-import ExProblema7 from "../components/clases/pre/uni/logicaclases/ex-problema-7";
-import ExProblema8 from "../components/clases/pre/uni/logicaclases/ex-problema-8";
-import ExProblema9 from "../components/clases/pre/uni/logicaclases/ex-problema-9";
-import ExProblema10 from "../components/clases/pre/uni/logicaclases/ex-problema-10";
-import ExProblema11 from "../components/clases/pre/uni/logicaclases/ex-problema-11";
+import ExProblema001 from "../components/clases/logicaclases/pre/ex-problema-001";
+import ExProblema002 from "../components/clases/logicaclases/pre/ex-problema-002";
+import ExProblema003 from "../components/clases/logicaclases/pre/ex-problema-003";
+import ExProblema004 from "../components/clases/logicaclases/pre/ex-problema-004";
+import ExProblema005 from "../components/clases/logicaclases/pre/ex-problema-005";
+import ExProblema006 from "../components/clases/logicaclases/pre/ex-problema-006";
+import ExProblema007 from "../components/clases/logicaclases/pre/ex-problema-007";
+import ExProblema008 from "../components/clases/logicaclases/pre/ex-problema-008";
+import ExProblema009 from "../components/clases/logicaclases/pre/ex-problema-009";
+import ExProblema010 from "../components/clases/logicaclases/pre/ex-problema-010";
+import ExProblema011 from "../components/clases/logicaclases/pre/ex-problema-011";
 import { Helmet } from "react-helmet";
 function ExLogicaClasesUno() {
   return (
     <>
       <Helmet>
-        <title>Exebio-Lógica de Clases</title>
+        <title>Lógica de Clases</title>
       </Helmet>
       <ExHeaderSlider />
       <ExSlider>
         <div className="mySlides activo">
-          <ExProblema1 />
+          <ExProblema001 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema2 />
+          <ExProblema002 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema3 />
+          <ExProblema003 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema4 />
+          <ExProblema004 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema5 />
+          <ExProblema005 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema6 />
+          <ExProblema006 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema7 />
+          <ExProblema007 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema8 />
+          <ExProblema008 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema9 />
+          <ExProblema009 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema10 />
+          <ExProblema010 />
         </div>
         <div className="mySlides inactivo">
-          <ExProblema11 />
+          <ExProblema011 />
         </div>
       </ExSlider>
     </>

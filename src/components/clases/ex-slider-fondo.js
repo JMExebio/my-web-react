@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 const SliderFondoStyled = styled.div`
+  position:absolute;
   width: 100%; 
-  top: 100%;
+  bottom: 10%;
   margin-top: 1em;
-  bottom: 0;
   padding: 0;
   margin:0;
+  z-index: 100;
   .slider {
     &-logo {
       display: grid;

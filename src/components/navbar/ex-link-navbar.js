@@ -5,11 +5,13 @@ const LinkNavbarStyled = styled.li`
   display: flex;
   align-items: center;
   a {
+    min-height:100px;
     position: relative;
     padding: 0.5em 0;
+    font-weight: 700;
     margin: 0 1em;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 32px;
     letter-spacing: 0.1em;
     color: #4e2cbe;
     ::after {

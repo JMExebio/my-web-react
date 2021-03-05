@@ -7,7 +7,7 @@ const WrapperStyled = styled.div`
   padding: 0 1em;  /* espaciadoa arriba/abajo 0 izquierda/derecha 1rem */
   width: 100%;
   box-sizing: border-box; 
-  /* overflow: hidden; */
+  /*overflow: hidden;*/ 
 `;
 
 function ExWrapper({ children }) {

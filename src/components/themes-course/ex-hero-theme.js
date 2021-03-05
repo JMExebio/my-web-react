@@ -47,9 +47,8 @@ function ExHeroTheme() {
           (img, index) => (
             <div className="hero-grid" key={index}>
               <Helmet>
-                <title>Exebio-{img.title}</title>
+                <title>{img.title}</title>
               </Helmet>
-              
               <img src={img.imgCardURL} alt="" />
             </div>
           )
